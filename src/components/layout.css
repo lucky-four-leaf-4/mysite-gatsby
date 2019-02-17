@@ -22,6 +22,14 @@ section,
 summary {
   display: block;
 }
+main{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #050505;
+  height: auto;
+  overflow: auto;
+}
 audio,
 canvas,
 progress,
