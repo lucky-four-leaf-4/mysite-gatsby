@@ -7,6 +7,7 @@ import Footer from "./footer"
 
 import "./layout.css"
 
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -19,11 +20,11 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <section>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <Footer />
-      </>
+      </section>
     )}
   />
 )
