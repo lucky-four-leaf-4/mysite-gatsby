@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  box-sizing: border-box;
 }
 .header_sitetitle{
   margin: 0;

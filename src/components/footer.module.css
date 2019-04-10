@@ -9,6 +9,7 @@ footer{
   padding: 1rem;
   text-align: right;
   color: #fff;
+  box-sizing: border-box;
 }
 .footer_inner a{
   color: #fff;
