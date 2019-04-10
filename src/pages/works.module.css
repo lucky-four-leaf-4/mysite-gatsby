@@ -11,5 +11,6 @@
   margin: 0 auto 0 0;
 }
 [class^="work_"] dt{
+  font-size: 2.0rem;
   text-align: center;
 }
