@@ -3,18 +3,19 @@ import React from "react"
 import Layout from "../components/layout"
 import Eyecatch from "../components/eyecatch"
 import SEO from "../components/seo"
+import skillsStyle from "./skills.module.css"
 
 class SkillLists extends React.Component{
   render(){
     const skillsdata = skilldetails.map((skill) =>
-    <div key={skill.id}>
-      <dt>{skill.title}</dt>
+    <div key={skill.id} className={"grid_" + skill.id}>
+      <dt className={"title"}>{skill.title}</dt>
       <dd>{skill.text}</dd>
     </div>
   );
 
   return(
-      <dl className="detail_contents">
+      <dl className={skillsStyle.detail_contents}>
       {skillsdata}
       </dl>
     );

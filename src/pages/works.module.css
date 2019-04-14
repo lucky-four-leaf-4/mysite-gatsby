@@ -3,14 +3,84 @@
 }
 [class^="work_"]{
   width:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.detail_contents [class^="work_"]:nth-of-type(odd){
-  margin: 0 0 0 auto;
+[class^="bg_work_"]{
+  margin: 4rem 0;
+  padding: 25vh 0;
+  display: flex;
+  flex-wrap: nowrap;
+  background-repeat: no-repeat;
+  background-size:contain;
 }
-.detail_contents [class^="work_"]:nth-of-type(even){
-  margin: 0 auto 0 0;
+[class^="bg_work_"]:nth-of-type(odd){
+  background-position: 5% 95%;
+  flex-direction: row-reverse;
 }
-[class^="work_"] dt{
+[class^="bg_work_"]:nth-of-type(even){
+  background-position: 95% 95%;
+  flex-direction: row;
+}
+[class="bg_work_1"]{
+  background-image:linear-gradient(45deg,
+    rgba(21, 21,21, 1.0) 0%,
+    rgba(21, 21,21, 0.95) 25%,
+    rgba(21,21,21,0.5) 50%,
+    rgba(21, 21,21, 0.95) 75%,
+    rgba(21, 21, 21, 1.0) 100%),
+    url('../images/bg_website.png');
+}
+[class="bg_work_2"]{
+  background-image:linear-gradient(-45deg,
+    rgba(21, 21,21, 1.0) 0%,
+    rgba(21, 21,21, 0.95) 25%,
+    rgba(21,21,21,0.5) 50%,
+    rgba(21, 21,21, 0.95) 75%,
+    rgba(21, 21, 21, 1.0) 100%),
+  url('../images/bg_banner.png');
+}
+[class="bg_work_3"]{
+  background-image:linear-gradient(45deg,
+    rgba(21, 21,21, 1.0) 0%,
+    rgba(21, 21,21, 0.95) 25%,
+    rgba(21,21,21,0.5) 50%,
+    rgba(21, 21,21, 0.95) 75%,
+    rgba(21, 21, 21, 1.0) 100%),
+  url('../images/bg_flyer.png');
+}
+[class="bg_work_4"]{
+  background-image:linear-gradient(180deg,
+    rgba(21, 21,21, 0.2) 0%,
+    rgba(21, 21,21, 0.4) 25%,
+    rgba(21,21,21,0.5) 50%,
+    rgba(21, 21,21, 1.0) 95%,
+    rgba(21, 21, 21, 1.0) 100%),
+  url('../images/bg_label.png');
+}
+[class="bg_work_5"]{
+  background-image:linear-gradient(180deg,
+    rgba(21, 21,21, 0.2) 0%,
+    rgba(21, 21,21, 0.4) 25%,
+    rgba(21,21,21,0.5) 50%,
+    rgba(21, 21,21, 1.0) 95%,
+    rgba(21, 21, 21, 1.0) 100%),
+  url('../images/bg_movie.png');
+}
+[class^="work_"]{
+  padding:4rem 0;
+  background-color:rgba(0,0,0,0.9);
+  background-image:url('../images/bg_dott.png');
+  background-repeat:repeat;
+  background-size:3px;
+}
+[class^="work_"] .worktitle{
+  margin: 0;
   font-size: 2.0rem;
   text-align: center;
+}
+[class^="work_"] .worktext{
+  margin: 0;
 }

@@ -8,16 +8,18 @@ import worksStyle from "./works.module.css"
 class WorksLists extends React.Component{
   render(){
     const worksdata = worksdetails.map((work) =>
-    <div key={work.id} className={"work_" + work.id}>
-      <dt>{work.title}</dt>
-      <dd>{work.text}</dd>
+    <div className={"bg_work_" + work.id}>
+      <div key={work.id} className={"work_" + work.id}>
+        <h2 className={worksStyle.worktitle}>{work.title}</h2>
+        <p className={worksStyle.worktext}>{work.text}</p>
+      </div>
     </div>
   );
 
   return(
-      <dl className={worksStyle.detail_contents}>
+      <section className={worksStyle.detail_contents}>
       {worksdata}
-      </dl>
+      </section>
     );
   }
 }
