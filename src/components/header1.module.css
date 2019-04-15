@@ -1,0 +1,31 @@
+.headline{
+  position: relative;
+  font-size: 4rem;
+  text-align: left;
+  margin:0 auto 4rem;
+  padding: 0 0 0 2rem;
+}
+.headline::before{
+  position: absolute;
+  bottom: -1rem;
+  left:2rem;
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 1rem;
+  transform: skewX(45deg);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.headline::after{
+  position: absolute;
+  bottom: -0.5rem;
+  left:7.5rem;
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 0.5rem;
+  transform: skewX(45deg);
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}

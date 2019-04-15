@@ -17,6 +17,7 @@
 }
 [class^="grid_"] dd{
   margin: auto;
+  text-align: center;
 }
 [class="grid_1"]{
   grid-column: 1;

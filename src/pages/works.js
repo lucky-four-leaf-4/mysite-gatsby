@@ -2,14 +2,15 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Eyecatch from "../components/eyecatch"
+import Header1 from "../components/header1"
 import SEO from "../components/seo"
 import worksStyle from "./works.module.css"
 
 class WorksLists extends React.Component{
   render(){
     const worksdata = worksdetails.map((work) =>
-    <div className={"bg_work_" + work.id}>
-      <div key={work.id} className={"work_" + work.id}>
+    <div key={work.id} className={"bg_work_" + work.id}>
+      <div className={"work_" + work.id}>
         <h2 className={worksStyle.worktitle}>{work.title}</h2>
         <p className={worksStyle.worktext}>{work.text}</p>
       </div>
@@ -35,7 +36,7 @@ const WorksPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `my site`, `kojima youhei`,'works']} />
     <Eyecatch pages="works"/>
-    <h1>My works</h1>
+    <Header1 title="My Works"/>
     <WorksLists />
   </Layout>
 )
