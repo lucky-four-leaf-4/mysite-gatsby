@@ -1,0 +1,21 @@
+.detail_contents{
+  max-width: 60em;
+  width: 100%;
+  margin: auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.section{
+  margin: 0 0 2rem 0;
+}
+.title{
+  font-size: 2rem;
+  margin: 0;
+}
+.text{
+  max-width: 40em;
+  width: 100%;
+  margin: 0 0 0 auto;
+  padding:0;
+  box-sizing: border-box;
+}

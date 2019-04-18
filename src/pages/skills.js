@@ -10,7 +10,7 @@ class SkillLists extends React.Component{
   render(){
     const skillsdata = skilldetails.map((skill) =>
     <div key={skill.id} className={"grid_" + skill.id}>
-      <dt className={"title"}>{skill.title}</dt>
+      <dt className={skillsStyle.title}>{skill.title}</dt>
       <dd>{skill.text}</dd>
     </div>
   );
